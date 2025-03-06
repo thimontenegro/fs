@@ -65,7 +65,7 @@ if st.button('Prever Preço'):
     
     def predict_price(data):
         """Função para fazer a previsão usando a API"""
-        url = 'http://localhost:8000/predict'  # Substitua pelo seu endpoint
+        url = 'https://fs-production-5753.up.railway.app/predict'  # Substitua pelo seu endpoint
         headers = {'Content-Type': 'application/json'}
         print(data)
         print(json.dumps(data))
